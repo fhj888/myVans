@@ -1,0 +1,67 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,td,input,textarea{
+	margin:0;
+	padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*header*/
+.header{
+	width:100%;
+    height: 130px;
+    background: pink;
+}
+.header img{
+    width: 184px;
+    height: 130px;
+    line-height: 130px;
+    margin-left: 10px;
+    float: left;
+}
+.rightTop{
+    width: 352px;
+    height: 46px;
+    float: right;
+    margin-right: 10px;
+}
+.rightTop img{
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    padding-top: 15px;
+}
+.rightTop ul li{
+    display: inline;
+    float: left;
+    color: #9b9b9b;
+}
+.rightTop a{
+    float: left;
+    line-height: 46px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.rightTop a:hover li{
+    color: #c8192e;
+}
+.cenC{
+    width: 1020px;
+    height: 69px;
+    background: yellow;
+    float: right;
+    margin-top: 15px;
+}
+.cenC .imgs{
+    display: block;
+    width: 10px;
+    height: 8px;
+}
+.cenC a{
+    display: inline;
+}
