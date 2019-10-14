@@ -231,6 +231,9 @@ li:hover .San{
      height: 436px;
      background: green;
      margin-left: 15px;
+     display: flex;
+     justify-content: space-around;
+     box-sizing: border-box;
  }
  .imgt img{
      display: block;
