@@ -199,8 +199,7 @@ li:hover .San{
 
  .three{
     width: 100%;
-    height: 1520px;
-    background: pink;
+    padding-bottom: 145px;
  }
  .banner{
      width: 100%;
@@ -224,12 +223,10 @@ li:hover .San{
  .tt{
      width: 240px;
      height: 435px;
-     background: red;
  }
  .imgs{
      width: 100%;
      height: 436px;
-     background: green;
      margin-left: 15px;
      display: flex;
      justify-content: space-around;
@@ -258,4 +255,161 @@ li:hover .San{
 }
 .move a{
     color: #589bc6;
+}
+.page{
+    width: 260px;
+    height: 68px;
+    float: right;
+    line-height: 68px;
+    display: flex;
+}
+.page p{
+    margin-left: 15px;
+}
+.page span{
+    float: left;
+    width: 60px;
+    height: 36px;
+    border: 1px solid #d7d8d4;
+    margin:15px 0 15px 15px;
+}
+.page .img1{
+    display: block;
+    width: 50px;
+    height: 36px;
+    margin:15px  0 15px;
+}
+.page #img2{
+    display: block;
+    width: 10px;
+    height: 12px;
+    margin:30px  20px 15px;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    // height: 480px;
+    background: #1c1c1c;
+    padding-top: 32px;
+    padding-bottom: 35px;
+}
+.fiste{
+    width: 35%;
+    height: 266px;
+    border-right: 1px solid #919191;
+    float: left;
+}
+.ff{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 40px;
+    float: left;
+}
+.ff h4{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 18px;
+}
+.ff a{
+    font-size: 14px;
+    color: #589bc6;
+    display: block;
+    line-height: 25px;
+}
+.ff a:hover{
+    color: red;
+}
+.ws{
+    padding-top: 55px;
+}
+.centC{
+    width: 38%;
+    height: 266px;
+    float: left;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #919191;
+}
+.riG{
+    width: 25%;
+    float: right;
+    height: 266px;
+    box-sizing: border-box;
+}
+.riG h4{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.imG{
+    width: 220px;
+    height: 36px;
+    margin-top: 33px;
+    margin-left: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.ff .Wh{
+    color: white;
+}
+.ff .Nt{
+    padding-top: 20px;
+}
+.ff .dZ{
+    color: #919191;
+}
+.centC .nf{
+    width: 200px;
+}
+.imG img{
+    width: 36px;
+    height: 36px;
+}
+.bott{
+    width: 100%;
+    height: 105px;
+    margin-top:304px;
+    display: flex;
+}
+.bott img{
+    margin-left: 20px;
+}
+.han{
+    width: 217px;
+    height: 87px;
+    margin-left: 30px;
+}
+.han a{
+    margin-right: 15px;
+    font-size: 14px;
+    color: #589bc6;
+    line-height: 30px;
+}
+#fis{
+    color: #919191;
+}
+.guD{
+    width: 60px;
+    height: 182px;
+    position: fixed;
+    right: 0;
+    bottom: 180px;
+}
+.guD img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: 0;
+}
+.guD:last-child{
+    width: 55px;
+    height: 55px;
+}
+.boT{
+    width: 100%;
+    height: 140px;
+    background: pink;
+}
+.lasty{
+    margin-left: 0;
 }
