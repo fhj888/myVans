@@ -188,6 +188,7 @@ a{
     color:#589bc6;
  }
 
+
  .three{
      width: 100%;
  }
@@ -211,7 +212,6 @@ a{
      width: 483px;
      height: 45px;
      margin-bottom: 20px;
-
  }
  .formt{
      height:45px;
@@ -220,9 +220,33 @@ a{
      color: white;
      font-weight: bold;
  }
+ .yanZ{
+     width: 260px;
+     float: left;
+ }
+ .yanC{
+    width: 160px;
+    height: 40px;
+    float: left;
+    margin-left: 15px;
+    background: black;
+    color: white;
+    margin-top: 5px;
+}
  .fir{
      width: 483px;
      background: red;
+ }
+ .bot{
+     width: 483px;
+     height: 40px;
+     margin-top: 60px;
+     margin-left: 60px;
+ }
+ .bot form{
+     line-height: 40px;
+     margin-left: 0px;
+     font-size: 14px;
  }
 
  /*footer*/
