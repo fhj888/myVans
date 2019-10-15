@@ -30,6 +30,12 @@ gulp.task("watchall",async()=>{
      gulp.watch("img/**/*",async()=>{
         gulp.src("img/**/*")
         .pipe(imagemin())
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\wans"))
+    })
+    //监听img
+    gulp.watch("*.php",async()=>{
+        gulp.src("*.php")
+        // .pipe(imagemin())
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\wans\\img"))
     })
 })

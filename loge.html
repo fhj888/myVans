@@ -192,12 +192,12 @@
 	<div class="three">
 		<div class="boeD">
 			<div class="foot">
-				<h2>用户名登录</h2>
+				<h2 id="btnLogin">用户名登录</h2>
 				<h2>手机快捷登录</h2>
 			</div>
 			<form action="">
-				<input class="forms" type="text" placeholder="手机号/用户名">
-				<input class="forms" type="password" placeholder="密码登录">
+				<input id="username" class="forms" type="text" placeholder="手机号/用户名">
+				<input id="userpass" class="forms" type="password" placeholder="密码登录">
 			</form>
 			<form action="">
 				<input class="formt fir" type="submit" value="立即登录">
@@ -284,3 +284,39 @@
 		</div>
 </body>
 </html>
+<script>
+
+$("#btnLogin").onclick = function(){
+    //1、
+    let xhr = new XMLHttpRequest();
+
+    xhr.open("post","loginCheck.php",true);
+
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            if(xhr.responseText=="1"){
+                addCookie("username",$("#username").value,7);
+                location.href="index.html";
+            }else{
+                $("#messageBox").innerHTML = "亲，用户名或者密码不对";
+            }
+        }
+    }
+    //post方式：设置请求头
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
+    let sendstr = `username=${$("#username").value}&userpass=${$("#userpass").value}`;
+    xhr.send(sendstr);
+}
+
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}	
+</script>
