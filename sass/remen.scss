@@ -191,6 +191,11 @@ li:hover .San{
 #ims .imga{
     margin-left: 210px;
 }
+.second{
+    width: 100%;
+    height: 16px;
+    background:black;
+ }
 
 //  banner
 .banner{
@@ -202,13 +207,11 @@ li:hover .San{
 .bann{
     width: 98%;
     height: 460px;
-    padding-top: 15px;
     padding-left:2%;
 }
 .foo{
     width:98%;
     height: 440px;
-    margin-top: 15px;
     overflow: hidden;
     transition: all 1s;
 }
