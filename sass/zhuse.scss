@@ -200,7 +200,7 @@ li:hover .San{
  }
  .boeD{
      width: 603px;
-     height: 463px;
+     height: 470px;
      margin:62px auto;
      border: 1px solid #c9caca;
  }
@@ -243,6 +243,9 @@ li:hover .San{
      width: 483px;
      background: red;
  }
+ .fir:hover{
+     background: black;
+ }
  .bot{
      width: 483px;
      height: 40px;
@@ -254,6 +257,29 @@ li:hover .San{
      margin-left: 0px;
      font-size: 14px;
  }
+.tiS{
+    position: absolute;
+    top: 305px;
+    left:435px;
+    font-size: 12px;
+}
+.mi{
+    position: absolute;
+    top: 375px;
+    left:435px;
+}
+.miT{
+    position: absolute;
+    top: 445px;
+    left:435px;
+}
+#messageBox{
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+
 
  /*footer*/
 .footer{
