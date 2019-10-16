@@ -13,11 +13,11 @@
         echo("数据库出错".mysql_error());
     }else{
         //2)、选择库（选择目的地）
-        mysql_select_db("mydb1908",$conn);
+        mysql_select_db("myvans",$conn);
 
         //3)、执行SQL语句（数据传输）
         //3.1)
-        $sqlstr="select * from vip where username='$username' and userpass='$userpass' ";//查询该用户名在数据库中有没有。 
+        $sqlstr="select * from loge where username='$username' and userpass='$userpass' ";//查询该用户名在数据库中有没有。 
         $result = mysql_query($sqlstr,$conn);
         $rows = mysql_num_rows($result);//获得结果的行数
         if($rows>0){
