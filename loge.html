@@ -200,9 +200,10 @@
 				<input id="userpass" class="forms" type="password" placeholder="密码登录">
 			</form>
 			<form action="">
-				<input class="formt fir" type="submit" value="立即登录">
-				<input class="formt las" type="submit" value="注册">
+				<input id="btnLogin" class="formt fir" type="button" value="立即登录">
+				<input class="formt las" type="button" value="注册">
 			</form>
+			<div id="messageBox"></div>
 			<div class="bot">
 				使用其他方法登录
 			   <img src="img/8.png" alt=""> 
@@ -284,13 +285,14 @@
 		</div>
 </body>
 </html>
+<script src="js/cookieTools.js"></script>
 <script>
 
 $("#btnLogin").onclick = function(){
     //1、
     let xhr = new XMLHttpRequest();
 
-    xhr.open("post","loginCheck.php",true);
+    xhr.open("post","php/loginCheck.php",true);
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
