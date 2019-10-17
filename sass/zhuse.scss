@@ -218,6 +218,7 @@ li:hover .San{
 
  form{
     margin-left: 60px;
+    position: relative;
   }
  .forms{
      width: 483px;
@@ -264,21 +265,24 @@ li:hover .San{
  }
 .tiS{
     position: absolute;
-    top: 305px;
-    left:435px;
+    top: 30px;
+    left:0px;
     font-size: 12px;
 }
 .mi{
     position: absolute;
-    top: 375px;
+    top: 100px;
+    left:0px;
 }
 .miT{
     position: absolute;
-    top: 445px;
+    top: 170px;
+    left:0px;
 }
 .miB{
     position: absolute;
-    top: 510px;
+    top: 235px;
+    left:0px;
 }
 #messageBox{
     margin-top: 50px;

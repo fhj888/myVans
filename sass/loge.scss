@@ -224,7 +224,7 @@ li:hover .San{
 }
  form{
     margin-left: 60px;
-    
+    position: relative;
  }
  .forms{
      width: 483px;
@@ -275,13 +275,14 @@ li:hover .San{
 }
 .Sa{
     position: absolute;
-    top: 350px;
+    top:155px;
+    left: 0;
     font-size: 14px;
 }
 .mA{
     position: absolute;
-    top: 460px;
-    left:435px;
+    top: 265px;
+    left: 0;
 }
 
  .bot img{
