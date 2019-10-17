@@ -202,8 +202,9 @@
 				<span class="tiS mi"></span><br>	
 				<input id="checkpass" class="forms" type="password" placeholder="再次输入密码">
 				<span class="tiS mi miT"></span>
-				<input class="forms yanZ" type="text">
-				<input class="forms yanC" type="submit" value="获取验证码">
+				<input id="bute" class="forms yanZ" type="text">
+				<span class="tiS mi miT miB"></span>
+				<input id="yazC" class="forms yanC" type="button" value="获取验证码">
 			</form>
 
 			
@@ -380,6 +381,28 @@
 					this.nextElementSibling.style.color="red";
 				}
 			}
+
+		var num;
+		$("#yazC").onclick=function(){
+			 num=parseInt(Math.random()*1000000);
+			// 23456
+			var arr=[];
+			var temp=num;
+			while(temp>0){
+				arr.unshift(temp%10);
+				temp=parseInt(temp/10);
+			}
+			alert(num);
+		}
+
+		$("#bute").onblur=function(){
+        if(this.value==num){
+            this.nextElementSibling.innerHTML =  "";
+        }else{
+            this.nextElementSibling.innerHTML =  "★验证码不正确";
+            this.nextElementSibling.style.color="red";
+        }
+     }
 		
 			
 		function $(str){
