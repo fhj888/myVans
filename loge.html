@@ -192,7 +192,7 @@
 	<div class="three">
 		<div class="boeD">
 			<div class="foot">
-				<h2 id="btnLogin">用户名登录</h2>
+				<h2>用户名登录</h2>
 				<h2>手机快捷登录</h2>
 			</div>
 			<form action="">
@@ -201,16 +201,23 @@
 			</form>
 			<form action="">
 				<input id="btnLogin" class="formt fir" type="button" value="立即登录">
-				<input class="formt las" type="button" value="注册">
+				<input id="btuZ" class="formt las" type="button" value="注册">
 			</form>
 			<div id="messageBox"></div>
 			<div class="bot">
 				使用其他方法登录
-			   <img src="img/8.png" alt=""> 
-               <img src="img/9.png" alt="">
-               <img src="img/q.png" alt=""> 
-               <img src="img/z.png" alt="">
+			   <img src="img/z.png" alt=""> 
+               <img src="img/q.png" alt="">
+               <img src="img/9.png" alt=""> 
+               <img src="img/8.png" alt="">
 			</div>
+			<!-- <div class="bot one">
+				使用其他方法登录
+				<img src="img/taobao.png" alt=""> 
+				<img src="img/qqlogin.png" alt="">
+				<img src="img/weibo.png" alt=""> 
+				<img src="img/weixin.png" alt="">
+			</div> -->
 		</div>
 	</div>
 
@@ -249,11 +256,22 @@
 			<div class="riG">
 				<h4>在这些地方找到我们</h4>
 				<div class="imG">
-					<img src="img/8.png" alt=""> 
-					<img src="img/9.png" alt="">
-					<img src="img/10.png" alt=""> 
-					<img src="img/11.png" alt="">
-					<img src="img/12.png" alt="">
+					<div class="fa">
+						<div class="tu">
+						</div>
+					</div>
+					<div class="fa">
+						<div class="tu er">
+						</div>
+					</div>
+					<div class="fa">
+						<div class="tu te">
+						</div>
+					</div>
+					<div class="fa">
+						<div class="tu ni">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="bott">
@@ -300,7 +318,8 @@ $("#btnLogin").onclick = function(){
                 addCookie("username",$("#username").value,7);
                 location.href="index.html";
             }else{
-                $("#messageBox").innerHTML = "亲，用户名或者密码不对";
+				$("#messageBox").innerHTML = "亲，用户名或者密码不对";
+				$("#messageBox").style.color ="rgb(228, 15, 139)";
             }
         }
     }
@@ -311,6 +330,9 @@ $("#btnLogin").onclick = function(){
     xhr.send(sendstr);
 }
 
+	$("#btuZ").onclick=function(){
+		location.href="zhuse.html"
+	}
 
 function $(str){
 	if(str.charAt(0)=="#"){
