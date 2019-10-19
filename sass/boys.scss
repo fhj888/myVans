@@ -210,8 +210,6 @@ li:hover .San{
 //  three
 .three{
     width: 100%;
-    height: 5160px;
-    background: pink;
 }
  .banner{
     width: 100%;
@@ -236,20 +234,17 @@ li:hover .San{
 }
 .aside{
     width: 434px;
-    height: 4473px;
-    background: yellow;
+    padding-bottom: 100px;
     padding-top: 25px;
+    float: left;
 }
 .asideLeft{
     width: 385px;
-    height: 100%;
-    background: gray;
     margin-left: 16px;
 }
 .box {
     width: 100%;
     height: 320px;
-    background: brown;
     li{
         width: 100%;
         height: 62px;
@@ -266,12 +261,11 @@ li:hover .San{
         .tab{
             width: 100%;
             height: 256px;
-            background: pink;
+            background: white;
             // display: none;
             .fanK{
                 width: 54px;
                 height: 40px;
-                background: green;
                 text-align: center;
                 line-height: 40px;
                 text-indent: 0;
@@ -301,20 +295,168 @@ li:hover .San{
     .wone{
         float: left;
         .tab1{
-            background: pink;
             .tt{
                 width: 40px;
-                background: blue;
             }
             .ks{
                 width: 52px;
-                background: blue;
             }
             .kb{
                 width: 45px;
             }
         }
     }
+}
+
+.asideRigth{
+    width: 900px;
+    height: 100%;
+    float: right;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    #cha{
+        width: 138px;
+        height: 48px;
+        background: black;
+        color: white;
+        clear: both;
+        margin: 0px auto;
+        line-height: 48px;
+        text-align: center;
+    }
+    .boxone{
+        width: 280px;
+        height: 432px;
+        padding-bottom: 25px;
+        float: left;
+        margin-right: 18px;
+        .imgs{
+            position: relative;
+            img{
+                display: block;
+                width: 280px;
+                height: 280px;
+            }
+            .hac{
+                width: 180px;
+                height: 50px;
+                background: red;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                top:207px;
+                left: 62px;
+                display: none;
+            }    
+        } 
+        .boty{
+            width: 100%;
+            height: 154px;
+            h3{
+                font-size: 18px;
+                padding-top: 15px;
+                padding-bottom: 22px;
+                text-align: center;
+            }
+            .tg{
+                padding-bottom: 0;
+            }
+            a{
+                display: block;
+                text-align: center;
+                color: #589bc6;
+            }
+        }
+    }
+
+}
+.asideRigth .boxone:hover .hac{
+    display: block;
+}
+.boxone .imgs .hac:hover {
+    background: rgb(46, 45, 45);
+}
+.boxone .boty:hover h3:first-child{
+    color: red;
+}
+.asideRigth  #cha:hover{
+    background: red;
+}
+
+// fout
+.fout{
+    width: 100%;
+    height: 600px;
+    background:white
+    clear: both;
+    h3{
+        text-align: center;
+        padding: 50px 0;
+        font-size: 32px;
+    }
+    .boxw{
+        width: 1125px;
+        margin: 0 auto 10px;
+        .boxone{
+            width: 280px;
+            height: 376px;
+            background: white;
+            padding-bottom: 25px;
+            float: left;
+            .imgs{
+                position: relative;
+                img{
+                    display: block;
+                    width: 280px;
+                    height: 280px;
+                }
+                .hac{
+                    width: 180px;
+                    height: 50px;
+                    background: red;
+                    color: white;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 50px;
+                    position: absolute;
+                    top:207px;
+                    left: 62px;
+                    display: none;
+                }    
+            } 
+            .boty{
+                width: 100%;
+                height: 154px;
+                h3{
+                    font-size: 18px;
+                    padding-top: 15px;
+                    padding-bottom: 22px;
+                    text-align: center;
+                }
+                .tg{
+                    padding-bottom: 0;
+                }
+                a{
+                    display: block;
+                    text-align: center;
+                    color: #589bc6;
+                }
+            }
+        }
+    }
+    .bos{
+        width: 162px;
+        height: 40px;
+        background: black;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        margin: 10px auto;
+        clear: both;
+    }
+    
 }
 
 
