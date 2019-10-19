@@ -277,6 +277,7 @@ li:hover .San{
             height: 256px;
             background: white;
             // display: none;
+            // position: absolute;
             .fanK{
                 width: 54px;
                 height: 40px;
@@ -289,6 +290,7 @@ li:hover .San{
                 border:1px solid #d2d2d2;
                 a{
                     font-size: 16px;
+                    display: block;
                     font-weight: 100px;
                     color: #58a8d7;
                 }
@@ -302,7 +304,7 @@ li:hover .San{
         }
     }
 }
-.fanK:hover a{
+li .tab .fanK:hover a{
     color: red;
 }
 .box{
